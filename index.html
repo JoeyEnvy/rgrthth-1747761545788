@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rgeh Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+        .hero {
+            background-image: url('https://images.pexels.com/photos/3184356/pexels-photo-3184356.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about p {
+            text-align: justify;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .service-item {
+            background-color: #e9f5fc;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .service-item i {
+            font-size: 2rem;
+            color: #4a90e2;
+        }
+        .testimonials {
+            background-color: #f9f9f9;
+        }
+        .testimonial-item {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .contact {
+            background-color: #e0f7fa;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact input, .contact textarea {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 0.7rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>rgeh Services</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to rgeh</h1>
+    </div>
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>At rgeh, our mission is to transform the way individuals and organizations approach their professional challenges by offering a suite of innovative services tailored to meet diverse needs. Our team of seasoned experts is dedicated to delivering exceptional results that drive success and inspire growth. We target both individuals looking to elevate their personal brand and companies aiming to enhance their organizational capabilities.</p>
+            <p>Our approach is rooted in a deep understanding of the unique challenges faced by today's dynamic market. We strive to provide solutions that are not only effective but also sustainable, ensuring long-term success. Through our robust network and strategic insights, we empower our clients to navigate complexities with confidence and agility.</p>
+            <ul>
+                <li>Customized Solutions</li>
+                <li>Expert Consultation</li>
+                <li>Strategic Planning</li>
+                <li>Innovative Approaches</li>
+                <li>Global Reach</li>
+            </ul>
+        </section>
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Business Consulting</h3>
+                <p>We offer expert business consulting services to help companies enhance their efficiency and achieve their goals.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation Workshops</h3>
+                <p>Our workshops are designed to foster creativity and innovation, driving new ideas and solutions.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-users"></i>
+                <h3>Team Building</h3>
+                <p>Strengthen your team with our effective team-building exercises and activities.</p>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial-item">
+                <p>"rgeh helped us streamline our processes and boost our productivity. Highly recommended!"</p>
+                <p><strong>- Alex Johnson</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <p>"The innovation workshops were a game-changer for our company. We've seen tremendous growth since."</p>
+                <p><strong>- Samantha Lee</strong></p>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 rgeh. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
